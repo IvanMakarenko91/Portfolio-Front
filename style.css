@@ -86,12 +86,6 @@ nav img:first-child {
   }
 }
 
-.banner {
-  height: 150vh;
-  width: 100%;
-  background: url(/images/logo.png);
-  background-size: cover;
-}
 
 nav.sticky {
   padding: 5px 50px;
@@ -103,5 +97,32 @@ nav.sticky {
 
 nav.sticky ul li a {
   color: black;
+}
+
+/* Présentation */
+
+.photo {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.photo::before {
+  position: absolute;
+  content: "";
+  background: url(/images/photo.jpg) no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+.photo h1 {
+  position: relative;
 }
 
