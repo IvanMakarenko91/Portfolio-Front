@@ -142,8 +142,12 @@ nav.sticky ul li a {
   padding: 80px;
 }
 
-.moi div {
-  font-size: 20px;
+.moi div:first-child {
+  font-size: 1.8rem;
+}
+
+.moi div:last-child {
+  font-size: 1.3rem;
 }
 
 .moi h3::after {
@@ -183,3 +187,29 @@ nav.sticky ul li a {
     padding: 30px;
   }
 }
+
+/* Réalisation */
+
+.realisation > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 20vh;
+}
+
+.fond {
+  position: absolute;
+  font-size: 8rem;
+  opacity: 0.05;
+  text-transform: uppercase;
+}
+
+.titre {
+  font-size: 2rem;
+}
+
+.realisation {
+  min-height: 60vh;
+}
+
