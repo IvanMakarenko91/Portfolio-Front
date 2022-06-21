@@ -15,6 +15,7 @@ body {
 
 .navbar {
   background-color: rgb(192, 192, 167);
+  transition: all 0.3s ease;
 }
 
 nav h2 {
@@ -40,7 +41,7 @@ nav img:first-child {
   color: white;
   transition: 0.3s ease;
   border: 1px solid white;
-  padding: 25px;
+  padding: 20px 25px;
 }
 
 .navbar i {
@@ -83,5 +84,24 @@ nav img:first-child {
   #navbarSupportedContent > ul > li:nth-child(n) > a {
     padding: 10px 10px;
   }
+}
+
+.banner {
+  height: 150vh;
+  width: 100%;
+  background: url(/images/logo.png);
+  background-size: cover;
+}
+
+nav.sticky {
+  padding: 5px 50px;
+  margin: -10px;
+  background-color: rgb(223, 217, 217);
+  transition: all 0.3s ease;
+  border: 1px solid black;
+}
+
+nav.sticky ul li a {
+  color: black;
 }
 
