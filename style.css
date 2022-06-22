@@ -524,3 +524,53 @@ nav.sticky ul li a {
     display: none;
   }
 }
+
+/* Footer */
+
+footer {
+  min-height: 20vh;
+}
+
+.fin > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 20vh;
+}
+
+#telecharger {
+  color: black;
+  padding: 10px;
+  background-color: rgb(209, 205, 205);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#telecharger:hover {
+  text-decoration: none;
+  color: rgb(119, 117, 117);
+  transition: all 0.3s ease;
+}
+
+.fa-download {
+  color: rgb(209, 159, 66);
+  font-size: 1.2rem;
+}
+
+.fa-github, .fa-linkedin {
+  font-size: 3rem;
+  color: black;
+}
+.fa-github:hover, .fa-linkedin:hover {
+  color: rgb(61, 60, 60);
+}
+
+.copyright {
+  background-color: #44484b;
+  min-height: 8vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
