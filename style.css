@@ -300,7 +300,7 @@ nav.sticky ul li a {
 
 @media screen and (max-width:991px) {
   .fond {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
   .titre {
     font-size: 1.5rem;
@@ -314,4 +314,22 @@ nav.sticky ul li a {
   .titre {
     font-size: 1.3rem;
   }
+
+  .competences .fond {
+    font-size: 2.3rem;
+  }
+}
+
+/* Competences */
+
+.competences > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 20vh;
+}
+
+.competences {
+  min-height: 60vh;
 }
