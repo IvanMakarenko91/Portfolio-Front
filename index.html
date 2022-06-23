@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/style.css">
+
+  <!-- Data AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -63,13 +66,15 @@
       <h2 class="fond">Personnels</h2>
     </div>
     <div class="row">
-      <div class="col-xl-4 projet mb-5"><div>En <strong>formation à distance</strong> depuis septembre 2021, Je vous propose ma candidature. De mes expériences professionnelles précédentes, j'ai acquis de l'autonomie et un bon sens de l'organisation du travail que j'aimerai mettre à votre disposition. 
-        Bien que je sois débutant, je suis quelqu'un de motivé et <strong>prêt a affronter toutes les difficultées.</strong></div>
+      <div class="col-xl-4 projet">
+        <h2 class="mb-5 bar-horizontale">Une Passion</h2>
+        <p>Passionné par le developpement web depuis septembre 2021, voici quelque-uns de mes <strong>projets personnels</strong> que j'ai réalisé, uniquement dans le but de m'améliorer.</p>
+        <p>Curieux et rigoureux, je cherche sans cesse a approfondir mes connaissances afin d'obtenir un travail toujours de meilleur qualité. </p>
       </div>
       <!-- <div class="verticale-bar"></div> -->
       <div class="col-xl-8 travaux">
         <div class="row justify-content-around">
-          <div class="image mb-5">
+          <div class="image mt-5 my-xl-5">
             <img src="./images/photo.jpg" class="image-jointe" alt="">
             <div class="real-overlay">
               <div class="real-titre">HTML + CSS</div>
@@ -77,7 +82,7 @@
               <a href="#"><button class="btn">Visiter le site <i class="fa-brands fa-html5 ml-1"></i></button></a>
             </div>
           </div>
-          <div class="image mb-5">
+          <div class="image my-5">
             <img src="./images/photo.jpg" class="image-jointe" alt="">
             <div class="real-overlay">
               <div class="real-titre">HTML + CSS + JS</div>
@@ -115,9 +120,9 @@
     <div class="row">
       <div class="col-xl-4 photo2"></div>
       <div class="col-xl-8 skills">
-        <div class="cercle justify-content-center text-center"><h2 class="py-5 text-white">Compétences</h2>
+        <div class="cercle justify-content-center text-center"><h2 class="py-5">Compétences</h2>
           <div class="row pb-5">
-              <div class="col-6 col-md-4 pb-1">
+              <div class="col-6 col-md-4 pb-1" data-aos="fade-down">
                   <div class="progresse blue">
                       <span class="progress-left">
                           <span class="progress-bar"></span>
@@ -127,12 +132,12 @@
                       </span>
                       <div class="progress-value">75%</div>
                   </div>
-                  <div class="mt-1 text-white">HTML / CSS</div>
+                  <div class="mt-1">HTML / CSS</div>
               </div>
               <div class="col-4 pb-1 image-comp">
                 <img src="./images/time.jpg" alt="" class="time">
               </div>
-              <div class="col-6 col-md-4 pb-1">
+              <div class="col-6 col-md-4 pb-1" data-aos="fade-down">
                   <div class="progresse yellow">
                       <span class="progress-left">
                           <span class="progress-bar"></span>
@@ -142,12 +147,12 @@
                       </span>
                       <div class="progress-value">40%</div>
                   </div>
-                  <div class="mt-1 text-white">Javascript</div>
+                  <div class="mt-1">Javascript</div>
               </div>
           </div>
           
           <div class="row pb-5">
-            <div class="col-6 pb-1">
+            <div class="col-6 pb-1" data-aos="fade-down">
                 <div class="progresse pink">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
@@ -157,9 +162,9 @@
                     </span>
                     <div class="progress-value">60%</div>
                 </div>
-                <div class="mt-1 text-white">Adobe.xd</div>
+                <div class="mt-1">Adobe.xd</div>
             </div>
-            <div class="col-6 pb-1">
+            <div class="col-6 pb-1" data-aos="fade-down">
                 <div class="progresse pink">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
@@ -169,12 +174,12 @@
                     </span>
                     <div class="progress-value">60%</div>
                 </div>
-                <div class="mt-1 text-white">Wordpress</div>
+                <div class="mt-1">Wordpress</div>
             </div>
           </div>
 
           <div class="row pb-5">
-            <div class="col-12 pb-1">
+            <div class="col-12 pb-1" data-aos="fade-down">
                 <div class="progresse green">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
@@ -184,7 +189,7 @@
                     </span>
                     <div class="progress-value">40%</div>
                 </div>
-                <div class="mt-1 text-white">React JS</div>
+                <div class="mt-1">React JS</div>
             </div>
           </div>
         </div>
@@ -196,7 +201,7 @@
     <div class="row titre">Contact
       <h2 class="fond">Appel</h2>
     </div>
-    <div class="row">
+    <div class="row color-footer pt-5">
       <div class="col-xl-4 text-center mb-5">
         <h3 class="mb-3">Coordonnées</h3>
         <div class="mb-1"><i class="fa-solid fa-circle-arrow-right"> Tel : </i> 06 58 91 97 67</div>
@@ -214,11 +219,16 @@
       </div>
     </div>
 
-    <div class="row copyright">
+    <div class="row copyright p-3">
       @Copyright MAKARENKO Ivan - Tous droits non reservés
     </div>
   </footer>
 
+  <!-- Data AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({
+    duration : 1000
+  });</script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!-- Js Typewritter -->
   <script src="/js/scroll.js"></script>
   <script src="/js/typewritter.js"></script>

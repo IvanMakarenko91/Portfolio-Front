@@ -14,7 +14,7 @@ body {
 /* Navbar */
 
 .navbar {
-  background-color: rgb(192, 192, 167);
+  background-color: rgb(233, 232, 232);
   transition: all 0.3s ease;
 }
 
@@ -37,7 +37,7 @@ nav img:first-child {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar i:hover {
-  background-color: black;
+  background-color: rgb(48, 46, 46);
   color: white;
   transition: 0.3s ease;
   border: 1px solid white;
@@ -90,7 +90,7 @@ nav img:first-child {
 nav.sticky {
   padding: 5px 50px;
   margin: -10px;
-  background-color: rgb(223, 217, 217);
+  background-color: rgb(197, 195, 195);
   transition: all 0.3s ease;
   border: 1px solid black;
 }
@@ -214,13 +214,14 @@ nav.sticky ul li a {
 }
 
 .projet {
-  background-color: rgb(223, 215, 215);
+  background-color: rgba(177, 177, 177, 0.85);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding: 80px;
   min-height: 40vh;
+  font-size: 20px;
 }
 
 /* .verticale-bar {
@@ -231,9 +232,19 @@ nav.sticky ul li a {
   margin-top: 100px;
 } */
 
+.bar-horizontale::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 190px;
+    height: 3px;
+    background-color: #000;
+}
+
 .travaux {
   display: flex;
   flex-direction: column;
+  background-color: rgba(219, 219, 219, 0.85);
 }
 
 .image {
@@ -305,6 +316,9 @@ nav.sticky ul li a {
   .titre {
     font-size: 1.5rem;
   }
+  .projet {
+    padding: 60px;
+  }
 }
 
 @media screen and (max-width:450px) {
@@ -317,6 +331,9 @@ nav.sticky ul li a {
 
   .competences .fond {
     font-size: 2.3rem;
+  }
+  .projet {
+    padding: 30px;
   }
 }
 
@@ -343,10 +360,10 @@ nav.sticky ul li a {
 }
 
 .skills {
-  background-color: rgb(199, 186, 186);
+  background-color: rgba(219, 219, 219, 0.85);
 }
 
-/* Competences responsive en petits formats d'écrans. */
+/* Competences responsive.*/
 .cercle .progresse {
   width: 100px;
   height: 100px;
@@ -574,4 +591,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.color-footer {
+  background-color: rgba(219, 219, 219, 0.85);
 }
