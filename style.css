@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -89,7 +93,7 @@ nav img:first-child {
 
 nav.sticky {
   padding: 5px 50px;
-  margin: -10px;
+  margin: -105px;
   background-color: rgb(197, 195, 195);
   transition: all 0.3s ease;
   border: 1px solid black;
@@ -116,13 +120,13 @@ nav.sticky ul li a {
 .photo::before {
   position: absolute;
   content: "";
-  background: url(/images/photo.jpg) no-repeat center;
+  background: url(/images/profil.jpg) no-repeat center;
   background-size: cover;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .photo div {
@@ -249,7 +253,7 @@ nav.sticky ul li a {
 
 .image {
   position: relative;
-  width: 370px;
+  width: 500px;
 }
 
 .image-jointe {
@@ -355,7 +359,7 @@ nav.sticky ul li a {
 .photo2 {
   min-height: 50vh;
   width: 100%;
-  background: url(/images/photo.jpg) no-repeat center;
+  background: url(/images/competence.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -536,7 +540,7 @@ nav.sticky ul li a {
   border-radius: 50%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .image-comp {
     display: none;
   }

@@ -8,7 +8,15 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(2500)
-  .typeString('<strong style="color:#620C0C">Apprenti</strong> developpeur web Full-stack, <br> ')
+  .typeString('<strong style="color:#620C0C">En formation</strong> dévllo')
+  .pauseFor(150)
+  .deleteChars(3)
+  .pauseFor(200)
+  .typeString('eloppeur wbe')
+  .pauseFor(200)
+  .deleteChars(2)
+  .pauseFor(250)
+  .typeString('eb full stack')
   .pauseFor(10000)
   .start();
 
