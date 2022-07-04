@@ -33,7 +33,7 @@ nav img:first-child {
 }
 
 .navbar-light .navbar-nav .nav-link, .nav-item a {
-  padding: 20px 20px;
+  padding: 20px;
   color: black;
   transition: 0.3s ease;
   font-size: 18px;
@@ -44,7 +44,6 @@ nav img:first-child {
   background-color: rgb(48, 46, 46);
   color: white;
   transition: 0.3s ease;
-  border: 1px solid white;
   padding: 20px 25px;
 }
 
@@ -91,7 +90,7 @@ nav img:first-child {
 }
 
 
-nav.sticky {
+/* nav.sticky {
   padding: 5px 50px;
   margin: -105px;
   background-color: rgb(197, 195, 195);
@@ -101,7 +100,7 @@ nav.sticky {
 
 nav.sticky ul li a {
   color: black;
-}
+} */
 
 /* Présentation */
 
@@ -113,20 +112,22 @@ nav.sticky ul li a {
   justify-content: center;
   align-items: start;
   position: relative;
-  color: white;
+  color: rgb(255, 255, 255);
   padding-left: 100px;
 }
 
 .photo::before {
   position: absolute;
   content: "";
-  background: url(/images/profil.jpg) no-repeat center;
+  background: url(/images/profil2.jpg) no-repeat;
   background-size: cover;
+  background-position: 100% 75px;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   opacity: 1;
+  background-color: rgb(223, 215, 215);
 }
 
 .photo div {
@@ -135,6 +136,11 @@ nav.sticky ul li a {
 
 .photo div:first-child {
   font-size: 1.5rem;
+  background-color: rgba(223, 215, 215, 0.8);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  position: relative;
+  color: black;
 }
 
 .moi {
@@ -164,16 +170,26 @@ nav.sticky ul li a {
 }
 
 #about {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  background-color: rgba(223, 215, 215, 0.8);
+  border-radius: 0px 10px 10px 10px;
+  padding: 10px;
+  position: relative;
+  color: black;
 }
 
 
 @media screen and (max-width:991px) {
+  .photo div:first-child {
+    font-size: 1.4rem;
+    padding: 5px 10px;
+  }
   .photo {
     padding-left: 35px;
   }
   #about {
-    font-size: 2rem;
+    font-size: 1.5rem;  
+    padding: 5px 10px;
   }
   .moi {
     padding: 60px;
@@ -327,7 +343,7 @@ nav.sticky ul li a {
 
 @media screen and (max-width:450px) {
   .fond {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .titre {
     font-size: 1.3rem;
